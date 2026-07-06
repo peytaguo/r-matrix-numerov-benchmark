@@ -10,9 +10,9 @@ This project currently focuses on the Section 4 examples from Descouvemont and B
 
 Planned examples:
 
-- Narrow resonance: \(^{12}\mathrm{C}+p\), \(l=0\)
-- Broad resonance: \(\alpha+\alpha\), \(l=4\)
-- Non-resonant scattering: \(\alpha+{}^3\mathrm{He}\), \(l=0\)
+- Narrow resonance: $\(^{12}\mathrm{C}+p\), \(l=0\)$
+- Broad resonance: $\(\alpha+\alpha\), \(l=4\)$
+- Non-resonant scattering: $\(\alpha+{}^3\mathrm{He}\), \(l=0\)$
 
 ## Repository structure
 
@@ -25,7 +25,7 @@ docs/        progress notes and additional documentation
 
 ## Status
 
-Current focus: implementing the \(^{12}\mathrm{C}+p\), \(l=0\) narrow-resonance example and benchmarking against Numerov integration. 
+Current focus: implementing the $\(^{12}\mathrm{C}+p\), \(l=0\)$ narrow-resonance example and benchmarking against Numerov integration. 
 
 See `docs/progress.md` for occasional development notes.
 
