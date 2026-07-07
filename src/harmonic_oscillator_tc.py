@@ -1,9 +1,8 @@
 import numpy as np
-
 import matplotlib.pyplot as plt 
 
-from numerov import numerov_integrator, is_eval_checker, normalize_wavefunction, HBAR_C
-from boundstates_numerov_routine import routine
+from boundstates_numerov_routine import boundstate_routine
+from numerov import normalize_wavefunction, HBAR_C
 
 #Harmonic Oscillator Test Case
 
@@ -27,7 +26,7 @@ def psi_0_exact(x):
 psi_left = psi_0_exact(-length)
 psi_next = psi_0_exact(-length + h)
 
-results = routine(
+results = boundstate_routine(
     initial_guess=E0_exact-0.5, 
     expected_spacing=0.1, 
     iterations=3, 
@@ -71,7 +70,7 @@ E1_exact = 3 * E0_exact
 psi_left = psi_1_exact(-length)
 psi_next = psi_1_exact(-length + h)
 
-results = routine(
+results = boundstate_routine(
     initial_guess=E1_exact-0.5, 
     expected_spacing=0.0001, 
     iterations=5000, 
